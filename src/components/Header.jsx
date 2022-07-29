@@ -45,9 +45,36 @@ const Header = ({activePage, setActivePage, setPreviousPage}) => {
         }
     }
 
+    const handleHoverLogo = e =>{
+
+        const background = document.getElementById("logo-hover-effect")
+        background.classList.toggle("hover-effect-1")
+
+        document.addEventListener("mousemove", function(ev){
+            background.style.left = 
+                ev.clientX<35 ? "0px"
+                    : ev.clientX>215 ? "180px"
+                     : `${ev.clientX - 35}px`
+        })
+    }
+
+    const handleHoverEnd = e =>{
+
+        const background = document.getElementById("logo-hover-effect")
+
+        if(background.classList.contains("hover-effect-1")){
+            background.classList.toggle("hover-effect-1")
+        }
+    }
+
   return (
     <header>
-        <img src="klub-logo2.png" width={200} height={30}/>
+        <div className="logo-header-background" onMouseEnter={e=>handleHoverLogo(e)} onMouseLeave={e=>handleHoverEnd(e)}>
+            <div className="logo-white-background">
+                <img src="klub-logo.png" width={200} height={30} alt="Kashmir Lub Dev logo" />
+                <div id="logo-hover-effect"/>
+            </div>
+        </div>
         <nav className="header-nav">
             <div className={`header-button-container ${navSelected(activePage, "Home")}`}>
                 <button

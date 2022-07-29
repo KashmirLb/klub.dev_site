@@ -14,11 +14,11 @@ const SelectLanguage = () => {
     <div className="select-language-container">
         <div className="select-language-box">
             <div className="language-container" onClick={()=>languageClicked("English")}>
-                <img src="/english.png" height={150}/>
+                <img src="/english.png" height={150} alt="English flag"/>
                 <p>English</p>
             </div>
             <div className="language-container" onClick={()=>languageClicked("Spanish")}>
-                <img src="/spanish.png" height={150}/>
+                <img src="/spanish.png" height={150} alt="Spanish flag"/>
                 <p>Spanish</p>
             </div>
         </div>

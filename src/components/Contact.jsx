@@ -18,20 +18,20 @@ const Contact = ({page}) => {
         <div className="contact-intro-left">
           <h3>{contactLinks}</h3>
           <div className="contact-icon">
-            <img src="/linkedin-icon.png" width={40}/>
+            <img src="/linkedin-icon.png" width={40} alt="Linkedin icon"/>
             <div className="git-link-container">
               <a target="_blank" href="https://www.linkedin.com/in/kashmir-lub/">linkedin.com/in/kashmir-lub/</a>
             </div>
           </div>
           <div className="contact-icon">
-            <img src="/github.png" width={40}/>
+            <img src="/github.png" width={40} alt="Github icon"/>
             <div className="git-link-container">
               <a target="_blank" href="https://github.com/KashmirLb">github.com/KashmirLb</a>
             </div>
           </div>
           <h3>{contactContact}</h3>
           <div className="contact-icon">
-            <img src="/mail-icon.png" width={40}/>
+            <img src="/mail-icon.png" width={40} alt="envelope icon"/>
             <div className="git-link-container">
               <p>kashmirlubdev@gmail.com</p>
             </div>

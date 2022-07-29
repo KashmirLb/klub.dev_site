@@ -61,6 +61,13 @@ const Spanish = {
             <p style={{marginBottom: "30px"}}>Se usa este sistema para facilitar la búsqueda de órdenes y objetos mediante el buscador <span>(</span>si es el cliente C001, todas sus órdenes serán por R001XX<span>)</span></p>
         </>
     ),
+    orderTry:(
+        <div className="order-try">
+            <p>Echa un vistazo por ti mism@! (No te preocupes, no deberías poder romper nada)</p>
+            <p><span>Login:</span> E003</p>
+            <p style={{marginBottom: "0px"}}><span>P:</span> Vi3w@dmin</p>
+        </div>
+    ),
     gamesTopIntro: "Primer Proyecto:",
     gamesHeader: "Juego Cruz y Raya",
     gamesLink: "Ir a: Juego Cruz Y Raya",

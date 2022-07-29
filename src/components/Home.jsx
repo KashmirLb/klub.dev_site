@@ -47,7 +47,7 @@ const Home = ({page}) => {
                 spinIcon()
                 tooltipHover(homeReactHover)
                 }}>
-                  <img src="/react-icon.png" height={100} alt="React icon" />
+                  <img src="/react-icon.png" height={100} alt="React icon"/>
               </div>
               <div className="icon-grid-home mongo-icon" >
                   <img src="/mongo-icon.png" height={100} alt="MongoDB icon" onMouseOver={()=>tooltipHover(homeMongoHover)} onMouseLeave={()=>tooltipHover("")}/>

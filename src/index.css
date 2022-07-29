@@ -32,12 +32,19 @@ a, a:visited, a:hover, a:active {
 
 .select-language-box{
   display: flex;
+  gap:40px;
   width: 50%;
   align-items: center;
   justify-content: space-around;
   color: var(--almost-white);
   font-size: 32px;
   font-weight: bold;
+}
+
+@media(max-width: 600px){
+  .select-language-box{
+    display:block;
+  }
 }
 
 .language-container{
@@ -47,6 +54,14 @@ a, a:visited, a:hover, a:active {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media(max-width:600px){
+  .language-icon-container{
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
 }
 
 .language-container:hover{
@@ -62,10 +77,43 @@ header{
   padding-right:8%;
   z-index: 4;
 }
+@media(max-width:600px){
+  header{
+    width:0;
+    display:none;
+  }
+}
 
 header img {
-  z-index: 4;
-  padding:25px;
+  z-index: 5;
+}
+
+.logo-header-background{
+  
+  background-color:#3532a3;
+  padding: 25px;
+  z-index: 5;
+}
+
+.logo-white-background{
+  position: relative;
+  background-color: white;
+  z-index: 0;
+  height:30px;
+  width: 200px;
+}
+
+#logo-hover-effect{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 20px;
+  
+  z-index: -1;
+}
+
+.hover-effect-1{
+  background-color: #FAA356;
 }
 
 header nav{
@@ -154,13 +202,23 @@ main{
   margin-left: auto;
 }
 
+@media(max-width: 600px){
+  main{
+    width: 95%;
+    margin-right: 5%;
+  } 
+}
 .page-container{
   position: relative;
   margin-top:80px;
   background-color: #4338ca;
   color: var(--almost-white);
   padding: 40px 80px;
-  
+}
+@media(max-width:600px){
+  .page-container{
+    padding:0px;
+  }
 }
 
 .leaving{
@@ -184,6 +242,7 @@ main{
   animation-duration: 1.2s;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
 }
 
 .homepage-head-container{
@@ -203,6 +262,7 @@ main{
 @media(max-width: 900px){
   .homepage-head{
     flex-direction: column;
+
   }
 }
 
@@ -214,6 +274,11 @@ main{
 
 .intro-left-grid-home{
   width: 30vw;
+}
+@media(max-width: 600px){
+  .intro-left-grid-home{
+    width: 100%;
+  }
 }
 
 #icons-right-grid-home{

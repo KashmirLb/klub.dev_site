@@ -52,7 +52,7 @@ const Games = ({page}) => {
         <h1>{gamesHeader}</h1>
       </div>
       <div className="single-icon-container">
-        <img src="/react-icon.png" height={80}/>
+        <img src="/react-icon.png" height={80} alt="React icon"/>
 
       </div>
       <div className="project-introduction-grid">
@@ -110,7 +110,7 @@ const Games = ({page}) => {
             <span>P:</span> G@mesWeb</p>
           </div>
           <div className="git-icon-link-block">
-            <img src="/github.png" width={40}/>
+            <img src="/github.png" width={40} alt="Github icon"/>
             <div className="git-link-container">
               <a target="_blank" href="https://github.com/KashmirLb/Games-Web">github.com/KashmirLb/Games-Web</a>
             </div>
